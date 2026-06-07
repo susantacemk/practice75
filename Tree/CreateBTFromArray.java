@@ -80,8 +80,10 @@ class Solution {
         }
         // create a root node
         TreeNode root = new TreeNode(rootValue);
+        // create bfs
         Queue<TreeNode> bfs = new LinkedList<TreeNode>();
         bfs.offer(root);
+        // just like bfs
         while (!bfs.isEmpty()) {
             TreeNode parent = bfs.poll();
             // find its child
